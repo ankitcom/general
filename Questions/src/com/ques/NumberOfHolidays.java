@@ -12,6 +12,8 @@ public class NumberOfHolidays {
 		int len=A.length;
 		int start=0,end=len-1;
 		
+		
+		
 		return result;
     }
 
