@@ -2,6 +2,9 @@ package com.ques;
 
 public class MonthlyTravelCost {
 
+	public static void main(String[] args) {
+		System.out.println(new MonthlyTravelCost().solution(new int[]{1,2,4,5,7,29,30}));
+	}
 	public int solution(int[] A) {
 		int cost=0;
 		
@@ -36,7 +39,7 @@ public class MonthlyTravelCost {
 				if(i<Integer.parseInt(pot7Indexes.substring(0, 1))){
 					cost=cost+2;
 				}else{
-					i=Integer.parseInt(pot7Indexes.substring(1, 2))+1;
+					i=Integer.parseInt(pot7Indexes.substring(1, 2));
 					cost=cost+7;
 					pot7Indexes=new StringBuffer(pot7Indexes.substring(2));
 				}
