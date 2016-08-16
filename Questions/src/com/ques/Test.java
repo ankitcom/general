@@ -1,12 +1,29 @@
 package com.ques;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.List;
 
 public class Test {
 
 	public static void main(String[] args) {
+		
+		double d=2.5;
+		System.out.println(d);
+		double e=d*3;
+		System.out.println(e);
+		Calendar cal=Calendar.getInstance();
+		System.out.println(cal.getTimeInMillis());
+		cal.set(Calendar.HOUR_OF_DAY,0);
+		cal.set(Calendar.MINUTE,0);
+		cal.set(Calendar.SECOND,0);
+		cal.set(Calendar.MILLISECOND,0);
+		long startDayTime=cal.getTimeInMillis();
+		System.out.println(startDayTime);
+		
+		String pulseType="10 min";
+		System.out.println(pulseType.substring(0,pulseType.indexOf(" ")));
 		List<TT> l1=new ArrayList<TT>();
 		TT a=new TT(1,"a");
 		TT b=new TT(2,"b");
